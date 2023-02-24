@@ -40,9 +40,41 @@
     </svg>
 
     <h2>Ligne</h2>
+    <svg>
+      <line x1="20" y1="50" x2="80" y2="320" stroke="black" stroke-width="2" />
+    </svg>
 
     <h2>Path</h2>
+    <svg width="100px" height="100px">
+      <path
+        d="M 10 90 L 30 30 L 50 70 L 70 30 L 90 90"
+        stroke="black"
+        stroke-width="5"
+        fill="none"
+        id="motionPath"
+      />
+      <circle cx="" cy="" r="10" fill="red">
 
+        <!-- Définit l'animation -->
+        <animateMotion dur="6s" repeatCount="indefinite">
+          <mpath xlink:href="#motionPath"/>
+        </animateMotion>
+    </svg>
+    <svg width="100px" height="100px">
+      <path
+        d="M 10 90 L 50 10 L 90 90"
+        stroke="black"
+        stroke-width="5"
+        fill="none"
+      />
+    </svg>
+    <svg width="100" height="100">
+      <path
+        d="M 10 10 L 90 90 M 90 10 L 10 90"
+        stroke="black"
+        stroke-width="5"
+      />
+    </svg>
     <h1>Animer des formes</h1>
 
     <h2>On click</h2>

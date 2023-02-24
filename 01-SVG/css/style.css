@@ -1,3 +1,8 @@
 body {
       font-family: 'Open Sans', sans-serif;
 }
+
+svg circle:nth-child(1):hover {
+      transform: scale(1);
+      r: 70;
+    }
